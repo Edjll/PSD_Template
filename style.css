@@ -252,6 +252,11 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	outline: none;
+}
+
 li {
 	display: inline;
 }
@@ -289,19 +294,21 @@ body {
 }
 
 header {
-	margin: 40px auto;
+	margin: 0 auto;
 	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
-	padding: 0 30px;
+	padding: 40px 30px;
 	height: 56px;
-	box-sizing: border-box;
 	z-index: 1;
 }
 
 .nav-icon {
 	outline: none;
+	padding: 0;
+	width: 24px;
+	z-index: 1;
 }
 
 .nav-icon:hover {
@@ -316,10 +323,9 @@ header {
 	color: white;
 }
 
-header a:nth-of-type(1) {
+.log {
 	grid-area: 1 / 1 / 2 / 4; 
-	text-decoration: none;
-	outline: none;
+	z-index: 1;
 } 
 
 .logo span {
@@ -335,6 +341,31 @@ nav {
 	grid-area: 1 / 5 / 2 / 12;
 }
 
+.menu-click {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.menu-click ul {
+	margin: 0;
+	display: flex;
+	padding: 100px 20px 0 20px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: absolute;
+	align-items: center;
+	top: 0;
+	box-sizing: border-box;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-click li {
+	text-align: center;
+}
+
 nav a {
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: -0.04em;
@@ -344,13 +375,17 @@ nav a {
 	font-weight: 300;
 }
 
+.menu-click a {
+	font-size: 20px;
+}
+
 nav a:hover {
 	height: 100%;
 	color: #c7b299;
 	transition-duration: 0.4s;
 }
 
-nav ul {
+.nav ul {
 	height: 100%;
 	display: flex;
   	margin: 0;
@@ -358,11 +393,11 @@ nav ul {
   	align-items: center;
 }
 
-nav li {
+.nav li {
 	padding-right: 29px;
 }
 
-nav li:nth-last-of-type(1) {
+.nav li:nth-last-of-type(1) {
 	padding-right: 0;
 }
 
@@ -373,6 +408,7 @@ nav li:nth-last-of-type(1) {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 1;
 }
 
 .cart a {
@@ -457,7 +493,7 @@ nav li:nth-last-of-type(1) {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	z-index: 1;
+	z-index: 0;
 }
 
 .slogan span:nth-of-type(1) {
