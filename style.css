@@ -444,6 +444,7 @@ nav a:hover {
 	align-items: center;
 	overflow: hidden;
 	background-color: #777777;
+	z-index: -1;
 }
 
 .arrows {
@@ -586,6 +587,7 @@ nav a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	z-index: -1;
 }
 
 .content {
