@@ -529,7 +529,7 @@ nav a:hover {
 	font-weight: bold;
 	color: white;
 	letter-spacing: 1pt;
-
+	z-index: 1;
 }
 
 .button:hover {
