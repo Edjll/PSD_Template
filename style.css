@@ -36,6 +36,11 @@
 	.textBoxes p {
 		font-size: 18px;
 	}
+
+	.sear-act {
+		top: 45px;
+		right: -3px;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -56,6 +61,11 @@
 	.textBoxes {
 		justify-content: space-between;
 		padding: 0 30px;
+	}
+
+	.sear-act {
+		top: -4px;
+		right: 35px;
 	}
 }
 
@@ -102,6 +112,16 @@
 		padding-left: 28px;
 	}
 } 
+
+@media (min-width: 400px) {
+	.sear-act {
+		width: 220px;
+	}
+
+	.in-s {
+		width: 186px;
+	}
+}
 
 @media (max-width: 1920px) {
 	.videoPresentation img {
@@ -168,20 +188,27 @@
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
 	.textBoxes {
 		flex-direction: column;
 		justify-content: space-evenly;
 		padding: 0 10px;
 		text-align: center;
 	}
+
+	.sear-act {
+		top: 45px;
+		right: -3px;
+	}
 }
 
-@media (max-height: 640px) {	
+@media (max-height: 720px) {
 	.slogan span:nth-of-type(1) {
 		display: none;
 	}
-	
+}
+
+@media (max-height: 640px) {	
 	.slogan h1 {
 		margin: 50px 0 15px 0;
 		font-size: 36px;
@@ -244,6 +271,17 @@
 	}
 }
 
+@media (max-width: 400px) {
+	.sear-act {
+		width: 185px;
+	}
+
+	.in-s {
+		width: 151px;
+	}
+}
+
+
 .montserrat {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -277,14 +315,6 @@ h3 {
 	font-family: 'Raleway';
 	font-weight: 600;
 	font-size: 20px;
-}
-
-.grid {	
-	display: grid;
-	grid-gap: 30px;
-	padding: 0 30px;
-	margin: 0 auto;
-	box-sizing: border-box;
 }
 
 body {
@@ -423,6 +453,10 @@ nav a:hover {
 	transition-duration: 0.4s;
 }
 
+.search {
+	position: relative;
+}
+
 .search a {
 	display: block;
 	width: 24px;
@@ -433,6 +467,50 @@ nav a:hover {
 .search a:hover {
 	background-image: url(img/icon-search-hover.png);
 	transition-duration: 0.4s;
+}
+
+.sear {
+	display: none;
+}
+
+.sear-act {
+	display: block;
+	position: absolute;
+	height: 35px;
+}
+
+.in-s {
+	position: absolute;
+	padding: 5px 10px 5px 10px;
+	height: 100%;
+	outline: none;
+	border: 1px solid #736357;
+	border-radius: 5px 0 0 5px;
+	background-color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.b-search {
+	position: absolute;
+	width: 33px;
+	height: 100%;
+	right: 0;
+	padding: 2px 0 0 0;
+	outline: none;
+	background-color: #998675;
+	border: 1px solid #736357;
+	border-radius: 0 5px 5px 0;
+}
+
+.b-search:hover {
+	background-color: #827264;
+	transition-duration: 0.4s;
+}
+
+.b-search img {
+	height: 20px;
 }
 
 .slider {	
@@ -508,6 +586,7 @@ nav a:hover {
 }
 
 .slogan span:nth-of-type(2) {
+	max-width: 590px;
 	color: white;
 	line-height: 24px;
 	word-wrap: break-word;
