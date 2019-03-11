@@ -6,7 +6,7 @@
 	}
 }
 
-@media (min-width: 1230px) {
+@media (min-width: 1231px) {
 	header {
 		display: grid;
 		grid-template-columns: repeat(12, 70px);
@@ -330,8 +330,9 @@ header {
 	right: 0;
 	left: 0;
 	padding: 40px 30px;
-	height: 56px;
+	height: 136px;
 	z-index: 1;
+	box-sizing: border-box;
 }
 
 .nav-icon {
@@ -957,12 +958,15 @@ nav a:hover {
 	transition-duration: 0.4s;
 }
 
+.dNew {
+	display: none;
+}
+
 .project {
 	margin-bottom: 40px;
 	display: grid;
 	height: 100%;
 	width: 100%;
-	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 30px;
 	padding: 0;
 }
