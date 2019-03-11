@@ -62,11 +62,6 @@
 		justify-content: space-between;
 		padding: 0 30px;
 	}
-
-	.sear-act {
-		top: -4px;
-		right: 35px;
-	}
 }
 
 @media (min-height: 640px) {
@@ -167,6 +162,11 @@
 
 	.textBoxes p {
 		font-size: 14px;
+	}
+	
+	.sear-act {
+		top: -4px;
+		right: 35px;
 	}
 }
 
