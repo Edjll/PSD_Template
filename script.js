@@ -192,3 +192,80 @@ all.onclick = function sop() {
 		i++;
 	} while (true);
 }
+
+bgSl1.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	x.className = "photo bh1" 
+}
+
+bgSl2.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	x.className = "photo bh2" 
+}
+
+bgSl3.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	x.className = "photo bh3" 
+}
+
+bgSl4.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	x.className = "photo bh4" 
+}
+
+bgSl5.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	x.className = "photo bh5" 
+}
+
+arrNext.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	while(true){
+		if (x.className === "photo bh1"){ 
+			x.className = "photo bh2";
+			break;
+		}
+		if (x.className === "photo bh2"){ 
+			x.className = "photo bh3";
+			break;
+		}
+		if (x.className === "photo bh3"){ 
+			x.className = "photo bh4";
+			break;
+		}
+		if (x.className === "photo bh4"){ 
+			x.className = "photo bh5";
+			break;
+		}
+		if (x.className === "photo bh5"){ 
+			x.className = "photo bh1";
+			break;
+		}
+	}
+}
+
+arrBack.onclick = function phSl() {
+	var x = document.getElementById('bgPh');
+	while(true){
+		if (x.className === "photo bh1"){ 
+			x.className = "photo bh5";
+			break;
+		}
+		if (x.className === "photo bh2"){ 
+			x.className = "photo bh1";
+			break;
+		}
+		if (x.className === "photo bh3"){ 
+			x.className = "photo bh2";
+			break;
+		}
+		if (x.className === "photo bh4"){ 
+			x.className = "photo bh3";
+			break;
+		}
+		if (x.className === "photo bh5"){ 
+			x.className = "photo bh4";
+			break;
+		}
+	}
+}
