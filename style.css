@@ -662,10 +662,29 @@ nav a:hover {
 	width: 100%;
 	position: absolute;
 	top: 0;
-	background-image: url(img/bg-photo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.bh1 {
+	background-image: url(img/bg-photo-1.png);
+}
+
+.bh2 {
+	background-image: url(img/bg-photo-2.jpg);
+}
+
+.bh3 {
+	background-image: url(img/bg-photo-3.jpg);
+}
+
+.bh4 {
+	background-image: url(img/bg-photo-4.jpg);
+}
+
+.bh5 {
+	background-image: url(img/bg-photo-5.jpg);
 }
 
 .content {
