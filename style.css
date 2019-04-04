@@ -741,6 +741,8 @@ nav a:hover {
 
 .services-div span {
 	color: #8c8c8c;
+	height: 72px;
+	overflow-y: hidden;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	margin-bottom: 30px;
@@ -1450,6 +1452,8 @@ nav a:hover {
 	font-size: 14px;
 	color: #8c8c8c;
 	line-height: 22px;
+	height: 66px;
+	overflow-y: hidden;
 }
 
 .read-more {
